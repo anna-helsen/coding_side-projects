@@ -6,9 +6,12 @@ html,
 body {
     --border-radius: 100px;
     --blue: #001B94;
-    --darkgrey: #3A4449;
     --yellow: #E7D000;
-    --lightgrey: #A4ADB2;
+    --lightgrey: #B8C4CC; 
+    --mediumgrey: #A4ADB2; 
+    --darkgrey: #3A4449;
+    --coral: #d35353;
+    --pink: #f79fee;
     --gutter: 3.125vw;
 
     margin: 0;
@@ -56,6 +59,7 @@ nav ul {
 }
 
 nav ul li {
+    color: #222948; 
     list-style: none;
     margin-left: 45px;
 }
@@ -65,3 +69,231 @@ nav ul li a {
     font-family: 'Space Mono', monospace;
 }
 
+
+/*OWN THINGS*/ 
+
+section {
+    width: 100%;
+    height: 100vw;
+    display: flex;
+}
+
+.text {
+    background-color: rgb(227, 59, 16);
+}
+
+/* 
+
+MAKE CLASSES FOR: 
+
+-empty
+-description
+-title
+
+e.g. for "About/Biography section": 
+
+section.about .empty
+section.about article 
+section.about article .title
+section.about article .description 
+
+*/
+
+/*
+section.biography {
+    color: var(--coral);
+    background: var(--blue);
+}
+
+section.biography .text {
+    background-color: rebeccapurple;
+}
+*/ 
+
+/* INTRO */
+
+section.intro {
+    background: var(--blue);
+}
+
+section.intro .empty2 {
+    flex-basis: 37.5vw;
+    background: var(--mediumgrey);
+    border-radius: 100px;
+}
+
+section.intro article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section.intro article .title {
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    background: var(--lightgrey);
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+section.intro article .description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: var(--darkgrey);
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+
+/* BIOGRAPHY */ 
+
+section.biography .empty {
+    flex-basis: 37.5vw;
+    background: #f79fee;
+    border-radius: 100px;
+}
+
+section.biography article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section.biography article .title {
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    background: #001B94;
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+section.biography article .description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: yellowgreen;
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+
+
+/* 
+section.textileart {
+    color: var(--blue);
+    background: var(--pink); 
+}
+
+section.textileart .text {
+    color: var(--blue);
+    background: var(--pink);
+}
+
+section#textileart.test {
+    background: rgb(9, 213, 43); 
+    color: #001B94;
+}
+
+section#textileart.test .text {
+    background-color: rebeccapurple;
+}
+*/ 
+
+
+
+/* TEXTILEART */
+
+section.textileart .empty {
+    flex-basis: 37.5vw;
+    background: #9fc1f7;
+    border-radius: 100px;
+}
+
+section.textileart article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section.textileart article .title {
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    background: #001B94;
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+section.textileart article .description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: yellowgreen;
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+
+
+/* EDUCATOR */ 
+
+
+section.educator {
+    color: var(--blue);
+    background: var(--lightgrey);
+}
+
+section.educator .empty {
+    flex-basis: 37.5vw;
+    background: #3a824a;
+    border-radius: 100px;
+}
+
+section.educator .text {
+    background-color: var(--darkgrey);
+}
+
+section.educator article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section.educator article .title {
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    background: #99a7e2;
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+section.educator article .description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: var(--mediumgrey);
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+
+
+
+
+
+
+section#contact {
+    color: black;
+    background: var(--lightgrey);
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(--coral --blue --lightgrey --yellow);
+}
+
+section.contact .text {
+    background-color: rebeccapurple;
+}
