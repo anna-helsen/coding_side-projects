@@ -5,9 +5,10 @@
 html,
 body {
     --border-radius: 100px;
-    --blue: #001B94;
+    --blue: #3F5CA2;
     --yellow: #E7D000;
-    --lightgrey: #B8C4CC; 
+    --darkwhite: #EEEAEA;
+    --lightgrey: #B8C4CC;
     --mediumgrey: #A4ADB2; 
     --darkgrey: #3A4449;
     --coral: #d35353;
@@ -74,7 +75,7 @@ nav ul li a {
 
 section {
     width: 100%;
-    height: 100vw;
+    height: 100vh;
     display: flex;
 }
 
@@ -113,7 +114,7 @@ section.biography .text {
 /* INTRO */
 
 section.intro {
-    background: var(--blue);
+    background: var(--darkwhite);
 }
 
 section.intro .empty2 {
@@ -147,39 +148,6 @@ section.intro article .description {
 }
 
 
-/* BIOGRAPHY */ 
-
-section.biography .empty {
-    flex-basis: 37.5vw;
-    background: #f79fee;
-    border-radius: 100px;
-}
-
-section.biography article {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-section.biography article .title {
-    flex: 2;
-    display: flex;
-    align-items: flex-end;
-    background: #001B94;
-    border-radius: 100px;
-    padding: 6.27vw;
-}
-
-section.biography article .description {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    background: yellowgreen;
-    border-radius: 100px;
-    padding: 6.27vw;
-}
-
-
 
 /* 
 section.textileart {
@@ -206,10 +174,26 @@ section#textileart.test .text {
 
 /* TEXTILEART */
 
+
+/*
 section.textileart .empty {
     flex-basis: 37.5vw;
     background: #9fc1f7;
     border-radius: 100px;
+}
+
+section.textileart figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 56.25vw;
+    margin: 0; 
+    background: var(--mediumgrey);
+    border-radius: 100px;
+}
+
+section.textileart figure {
+    width: 50%;
 }
 
 section.textileart article {
@@ -235,31 +219,80 @@ section.textileart article .description {
     border-radius: 100px;
     padding: 6.27vw;
 }
+*/ 
+
+section.textileart {
+    background: var(--darkwhite);
+}
+
+section.textileart .empty {
+    flex-basis: 37.5vw;
+    background: var(--blue);
+    border-radius: 100px;
+}
+
+section.textileart figure img {
+    flex-basis: 37.5vw;
+    border-radius: 100px;
+}
+
+section.textileart article img {
+    flex-basis: 37.5vw;
+    border-radius: 100px;
+}
+
+section.textileart article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section.textileart article .title {
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    background: var(--lightgrey);
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+section.textileart article .description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: var(--mediumgrey);
+    border-radius: 100px;
+    padding: 6.27vw;
+}
 
 
 
 /* EDUCATOR */ 
 
-
 section.educator {
-    color: var(--blue);
-    background: var(--lightgrey);
+    background-color: var(--darkwhite);
 }
 
 section.educator .empty {
     flex-basis: 37.5vw;
-    background: #3a824a;
+    background: var(--lightgrey);
     border-radius: 100px;
 }
 
-section.educator .text {
-    background-color: var(--darkgrey);
+section.educator figure img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 37.5vw;
+    margin: 5;
+    background: var(--mediumgrey);
+    border-radius: 100px;
 }
 
+
 section.educator article {
-    flex: 1;
     display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 
 section.educator article .title {
@@ -271,29 +304,85 @@ section.educator article .title {
     padding: 6.27vw;
 }
 
+section.educator article .title figure img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 56.25vw;
+    margin: 0;
+    background: var(--mediumgrey);
+    border-radius: 100px;
+}
+
 section.educator article .description {
     flex: 1;
     display: flex;
     align-items: center;
-    background: var(--mediumgrey);
+    background: var(--lightgrey);
     border-radius: 100px;
     padding: 6.27vw;
 }
 
 
+/* BIOGRAPHY */
 
-
-
-
-
-section#contact {
-    color: black;
-    background: var(--lightgrey);
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(--coral --blue --lightgrey --yellow);
+section.biography .empty {
+    flex-basis: 37.5vw;
+    background: #f79fee;
+    border-radius: 100px;
 }
 
-section.contact .text {
-    background-color: rebeccapurple;
+section.biography figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 56.25vw;
+    margin: 0;
+    background: #f79fee;
+    border-radius: 100px;
+}
+
+section.biography figure img {
+    width: 50%;
+}
+
+
+section.biography article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section.biography article .title {
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    background: #001B94;
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+section.biography article .description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: yellowgreen;
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+
+/* CONTACT */ 
+
+section#contact .contact {
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background: radial-gradient(--lightgrey --mediumgrey --blue --pink --yellow);
+    border-radius: 100px;
+}
+
+section#contact .contact a {
+    font-size: large;
+    color: #3a824a;
 }
