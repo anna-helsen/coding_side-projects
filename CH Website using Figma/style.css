@@ -234,6 +234,8 @@ section.textileart .empty {
 section.textileart figure img {
     flex-basis: 37.5vw;
     border-radius: 100px;
+    align-items: center;
+    align-self: center;
 }
 
 section.textileart article img {
@@ -280,15 +282,12 @@ section.educator .empty {
 }
 
 section.educator figure img {
-    display: flex;
+    display: flex 1;
     align-items: center;
     justify-content: center;
     flex-basis: 37.5vw;
-    margin: 5;
-    background: var(--mediumgrey);
-    border-radius: 100px;
+    margin: 0;
 }
-
 
 section.educator article {
     display: flex;
@@ -326,9 +325,13 @@ section.educator article .description {
 
 /* BIOGRAPHY */
 
+section.biography {
+    background-color: var(--darkwhite);
+}
+
 section.biography .empty {
-    flex-basis: 37.5vw;
-    background: #f79fee;
+    flex-basis: 1;
+    background: var(--lightgrey);
     border-radius: 100px;
 }
 
@@ -336,9 +339,8 @@ section.biography figure {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: 56.25vw;
+    flex-basis: 1;
     margin: 0;
-    background: #f79fee;
     border-radius: 100px;
 }
 
@@ -346,43 +348,51 @@ section.biography figure img {
     width: 50%;
 }
 
-
 section.biography article {
-    flex: 1;
+    /*flex: 1;*/
     display: flex;
     flex-direction: column;
 }
 
 section.biography article .title {
-    flex: 2;
+    flex-basis: 2;
     display: flex;
     align-items: flex-end;
-    background: #001B94;
+    background: var(--darkgrey);
     border-radius: 100px;
-    padding: 6.27vw;
 }
 
 section.biography article .description {
-    flex: 1;
+    flex-basis: 1;
     display: flex;
     align-items: center;
-    background: yellowgreen;
+    background: var(--blue);
     border-radius: 100px;
-    padding: 6.27vw;
 }
 
 
 /* CONTACT */ 
 
-section#contact .contact {
+
+section.contact {
+    background: linear-gradient(var(--lightgrey), var(--mediumgrey), var(--blue), var(--pink), var(--yellow));
     align-items: center;
     justify-content: center;
-    color: black;
-    background: radial-gradient(--lightgrey --mediumgrey --blue --pink --yellow);
+}
+
+section.contact article {
+    display: flex;
+    color: #E7D000;
+    flex-basis: 2;
+    align-items: center;
+    /*background-color: var(--darkwhite); */
+    background: linear-gradient(#e66465, #9198e5);
+    margin: 7%;
+    padding: 30px;
     border-radius: 100px;
 }
 
-section#contact .contact a {
+section.contact article a {
     font-size: large;
-    color: #3a824a;
+    color: var(--blue);
 }
