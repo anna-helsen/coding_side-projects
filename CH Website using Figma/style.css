@@ -329,6 +329,24 @@ section.biography {
     background-color: var(--darkwhite);
 }
 
+section.biography article .title {
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    background: var(--lightgrey);
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
+section.biography article .description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: var(--mediumgrey);
+    border-radius: 100px;
+    padding: 6.27vw;
+}
+
 section.biography .empty {
     flex-basis: 1;
     background: var(--lightgrey);
@@ -354,6 +372,7 @@ section.biography article {
     flex-direction: column;
 }
 
+/*
 section.biography article .title {
     flex-basis: 2;
     display: flex;
@@ -368,7 +387,7 @@ section.biography article .description {
     align-items: center;
     background: var(--blue);
     border-radius: 100px;
-}
+} */
 
 
 /* CONTACT */ 
