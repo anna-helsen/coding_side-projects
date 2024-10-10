@@ -17,7 +17,7 @@ body {
 
     margin: 0;
     padding: 0;
-    background: #B8C4CC;
+    background: var(--darkwhite);
     color: #d35353;
     font-size: 20px;
     font-family: 'Syne', sans-serif;
@@ -66,21 +66,38 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #000000;
     font-family: 'Space Mono', monospace;
 }
 
 
-/*OWN THINGS*/ 
+/* THINGS */ 
 
+/*
 section {
     width: 100%;
     height: 100vh;
     display: flex;
+} */ 
+
+section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    height: calc(100vh - 100px); 
+    top: 100px;
+    background-color: var(--darkwhite);
+    z-index: 2;
 }
 
 .text {
     background-color: rgb(227, 59, 16);
+}
+
+section.sticky {
+    position: sticky;
+    margin-top: 100px;
 }
 
 /* 
