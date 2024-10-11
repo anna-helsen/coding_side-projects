@@ -249,25 +249,25 @@ section.textileart .empty {
 }
 
 section.textileart figure img {
-    flex-basis: 37.5vw;
+    flex-basis: 50vw;
     border-radius: 100px;
     align-items: center;
     align-self: center;
 }
 
-section.textileart article img {
-    flex-basis: 37.5vw;
+section.textileart img {
+    flex-basis: 50vw;
     border-radius: 100px;
 }
 
 section.textileart article {
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
 }
 
 section.textileart article .title {
-    flex: 2;
+    flex: 1;
     display: flex;
     align-items: flex-end;
     background: var(--lightgrey);
@@ -294,7 +294,7 @@ section.educator {
 
 section.educator .empty {
     flex-basis: 37.5vw;
-    background: var(--lightgrey);
+    background: var(--darkgrey);
     border-radius: 100px;
 }
 
@@ -333,7 +333,7 @@ section.educator article .title figure img {
 section.educator article .description {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     background: var(--lightgrey);
     border-radius: 100px;
     padding: 6.27vw;
@@ -347,26 +347,27 @@ section.biography {
 }
 
 section.biography article .title {
-    flex: 2;
+    flex: 1;
     display: flex;
     align-items: flex-end;
     background: var(--lightgrey);
     border-radius: 100px;
     padding: 6.27vw;
+    flex-basis: 75vw;
 }
 
 section.biography article .description {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     background: var(--mediumgrey);
     border-radius: 100px;
     padding: 6.27vw;
 }
 
 section.biography .empty {
-    flex-basis: 1;
-    background: var(--lightgrey);
+    flex-basis: 37.5vw;
+    background: var(--blue);
     border-radius: 100px;
 }
 
